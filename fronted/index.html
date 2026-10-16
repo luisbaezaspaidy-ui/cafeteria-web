@@ -5,10 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafetería - Registro de pedido</title>
+
+    <!-- vincular los estilos css de la pagina-->>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- encabezado principal de la cafeteria-->>
     <header class="encabezado">
         <div class="marca">
             <h1>Cafetería</h1>
@@ -26,9 +29,14 @@
     </header>
 
     <main>
+
+
+
         <section class="formulario" id="pedido">
 
             <h2>Registro de pedido</h2>
+
+            <!-- formulario para registrar los datos del cliente y su pedido-->>
 
             <form id="formPedido">
 
@@ -42,6 +50,9 @@
                     </div>
 
                     <div class="campo">
+
+                        <!-- seleccion del producto cantidad y tamaño-->>
+
                         <label for="correo">Correo electrónico</label>
                         <input type="email" id="correo"
                                placeholder="correo@ejemplo.com"
@@ -92,6 +103,8 @@
                     <div class="campo opciones-campo">
                         <p class="titulo-opcion">Pedido para llevar</p>
 
+                        <!-- opciones adicionales para personalizar el pedido-->>
+
                         <label class="checkbox">
                             <input type="checkbox" id="llevar">
                             Sí, para llevar
@@ -110,6 +123,8 @@
                 </div>
 
                 <div class="botones">
+                    <!-- botones para registrar o limpiar formulario-->>
+
                     <button type="reset" class="limpiar">
                         Limpiar
                     </button>
@@ -127,6 +142,8 @@
         <h3>Cafetería</h3>
         <p>Gracias por su preferencia</p>
     </footer>
+
+    <!-- cargar el archivo javascript del formulario-->>
 
     <script src="script.js"></script>
 </body>

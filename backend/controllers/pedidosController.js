@@ -1,7 +1,7 @@
-
+//importar la funcion que guarda el pedido en MySQL
 const { guardarPedido } = require("../Models/pedidoModel");
 
-// Registrar un nuevo pedido
+// funcion encargada de recibir y registrar los pedidos
 const registrarPedido = async (req, res) => {
     try {
         const {
@@ -32,7 +32,7 @@ const registrarPedido = async (req, res) => {
             });
         }
 
-        // Guardar el pedido en MySQL
+        // enviar la informacion el modelo para guardarla
         const resultado = await guardarPedido({
             nombre,
             correo,
@@ -50,6 +50,7 @@ const registrarPedido = async (req, res) => {
         });
 
     } catch (error) {
+        //manejar los errores durante el registro
         console.error("Error al guardar el pedido:", error);
 
         res.status(500).json({
@@ -57,5 +58,5 @@ const registrarPedido = async (req, res) => {
         });
     }
 };
-
+//exportar la funcion del controlador
 module.exports = { registrarPedido };

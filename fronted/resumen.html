@@ -8,6 +8,8 @@
 
     <title>Resumen del pedido - Cafetería</title>
 
+    <!-- vincular los estilos css del recibo-->>
+
     <link rel="stylesheet" href="style.css">
 
     <style>
@@ -78,10 +80,13 @@
 
     <main>
         <section class="contenedor-resumen">
+            <!-- encabezado de la pagina de confirmacion-->>
 
             <h2 class="titulo-resumen">
                 Resumen del pedido
             </h2>
+
+            <!-- contenedor donde javaScript mostrara los datos del pedido-->>
 
             <div id="datosPedido"></div>
 
@@ -89,12 +94,16 @@
                 ¡Pedido registrado correctamente!
             </p>
 
+            <!-- enlace para regresar y realizar otro pedido-->>
+
             <a href="index.html" class="volver">
                 Realizar otro pedido
             </a>
 
         </section>
     </main>
+
+    <!-- cargar el archivo que genera el resumen del pedido-->>
 
     <script src="resumen.js"></script>
 
