@@ -1,0 +1,102 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Resumen del pedido - Cafetería</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .contenedor-resumen {
+            max-width: 550px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border: 1px solid #d9c6b8;
+            border-radius: 8px;
+        }
+
+        .titulo-resumen {
+            background-color: #70432a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+
+        .detalle {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+            .detalle span {
+                text-align: right;
+                overflow-wrap: anywhere;
+            }
+
+        .mensaje-exito {
+            text-align: center;
+            color: #247a42;
+            font-weight: bold;
+            margin: 25px 0;
+        }
+
+        .volver {
+            display: block;
+            width: fit-content;
+            margin: 20px auto 0;
+            padding: 12px 25px;
+            background-color: #70432a;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+            .volver:hover {
+                background-color: #4b2a19;
+            }
+    </style>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <div class="marca">
+            <h1>Cafetería</h1>
+            <p>Haz tu pedido de forma rápida y sencilla</p>
+        </div>
+
+        <div class="logo">☕</div>
+    </header>
+
+    <main>
+        <section class="contenedor-resumen">
+
+            <h2 class="titulo-resumen">
+                Resumen del pedido
+            </h2>
+
+            <div id="datosPedido"></div>
+
+            <p class="mensaje-exito">
+                ¡Pedido registrado correctamente!
+            </p>
+
+            <a href="index.html" class="volver">
+                Realizar otro pedido
+            </a>
+
+        </section>
+    </main>
+
+    <script src="resumen.js"></script>
+
+</body>
+</html>

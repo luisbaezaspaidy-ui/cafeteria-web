@@ -1,0 +1,133 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería - Registro de pedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="marca">
+            <h1>Cafetería</h1>
+            <p>Haz tu pedido de forma rápida y sencilla</p>
+        </div>
+
+        <div class="logo">☕</div>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Menú</a>
+            <a href="#pedido">Pedido</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="formulario" id="pedido">
+
+            <h2>Registro de pedido</h2>
+
+            <form id="formPedido">
+
+                <div class="campos">
+
+                    <div class="campo">
+                        <label for="nombre">Nombre del cliente</label>
+                        <input type="text" id="nombre"
+                               placeholder="Ingresa tu nombre"
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo"
+                               placeholder="correo@ejemplo.com"
+                               required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="producto">Producto</label>
+                        <select id="producto" required>
+                            <option value="">Selecciona un producto</option>
+                            <option value="cafe Americano">Café americano</option>
+                            <option value="capuchino">Capuchino</option>
+                            <option value="Latte">Latte</option>
+                            <option value="Frappe">Frappé</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cantidad">Cantidad</label>
+                        <input type="number" id="cantidad"
+                               min="1" value="1" required>
+                    </div>
+
+                    <fieldset class="campo opciones-campo">
+                        <legend>Tamaño de bebida</legend>
+
+                        <div class="opciones">
+                            <label>
+                                <input type="radio" name="tamano"
+                                       value="chica" required>
+                                Chico
+                            </label>
+
+                            <label>
+                                <input type="radio" name="tamano"
+                                       value="Mediana">
+                                Mediano
+                            </label>
+
+                            <label>
+                                <input type="radio" name="tamano"
+                                       value="Grande">
+                                Grande
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="campo opciones-campo">
+                        <p class="titulo-opcion">Pedido para llevar</p>
+
+                        <label class="checkbox">
+                            <input type="checkbox" id="llevar">
+                            Sí, para llevar
+                        </label>
+                    </div>
+
+                </div>
+
+                <div class="observaciones">
+                    <label for="Observaciones">
+                        Observaciones
+                    </label>
+
+                    <textarea id="Observaciones" rows="5"
+                              placeholder="Escribe algunas observaciones adicionales..."></textarea>
+                </div>
+
+                <div class="botones">
+                    <button type="reset" class="limpiar">
+                        Limpiar
+                    </button>
+
+                    <button type="submit" class="registrar">
+                        Registrar
+                    </button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Cafetería</h3>
+        <p>Gracias por su preferencia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
